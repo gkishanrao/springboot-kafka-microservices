@@ -17,6 +17,7 @@ This guide walks you through the process of downloading, installing, and running
 
 1. Download and extract Kafka:
    - Extract the `kafka_2.12-3.9.1.tgz` file to a folder like `C:\Users\<YourName>\kafka`.
+     
 
 2. Navigate to your Kafka folder:
    ```bash
