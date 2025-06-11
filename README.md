@@ -45,6 +45,7 @@ This guide walks you through the process of downloading, installing, and running
 hello world
 demo1
 demo2
+
 **To run on Git Bash:**
 
 ./bin/zookeeper-server-start.sh config/zookeeper.properties
