@@ -23,12 +23,11 @@ This guide walks you through the process of downloading, installing, and running
    cd C:\Users\<YourName>\kafka
 **Step 2: Start Kafka Environment**
 
-** Start Zookeeper**
-  ```bash
+3. Start Zookeeper
+
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 
-**Start Kafka Broker**
-  ```bash
+4. Start Kafka Broker
 .\bin\windows\kafka-server-start.bat .\config\server.properties
 
 **** 🛠️ Kafka Topic Operations**
