@@ -4,6 +4,7 @@ import com.nirwantech.base_domains.dto.Order;
 import com.nirwantech.base_domains.dto.OrderEvent;
 import com.nirwantech.order_service.kafka.OrderProducer;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,7 +21,7 @@ public class OrderController {
     }
 
     @PostMapping("/orders")
-    public String placeOder(Order order){
+    public String placeOder(@RequestBody Order order){
         order.setOrderId((UUID.randomUUID().toString()));
         OrderEvent orderEvent1=new OrderEvent();
         orderEvent1.setOrder(order);
