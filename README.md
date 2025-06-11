@@ -21,19 +21,22 @@ This guide walks you through the process of downloading, installing, and running
 2. Navigate to your Kafka folder:
    ```bash
    cd C:\Users\<YourName>\kafka
-**Step 2: Start Kafka Environment**
+Step 2: Start Kafka Environment
 
 3. Start Zookeeper
   ```bash
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 
+
 4. Start Kafka Broker
   ```bash
 .\bin\windows\kafka-server-start.bat .\config\server.properties
 
+
 5.**** 🛠️ Kafka Topic Operations**
   ```bash
 .\bin\windows\kafka-topics.bat --create --topic topic-example --bootstrap-server localhost:9092
+
 
 6.**✍️ Produce Events (Send messages)**
   ```bash
@@ -41,6 +44,7 @@ This guide walks you through the process of downloading, installing, and running
 >hello world
 >demo1
 >demo2
+
 7.**📥 Consume Events (Read messages)**
   ```bash
 .\bin\windows\kafka-console-consumer.bat --topic topic-example --from-beginning --bootstrap-server localhost:9092
@@ -49,6 +53,7 @@ This guide walks you through the process of downloading, installing, and running
 hello world
 demo1
 demo2
+
 
 **To run on Git Bash:**
   ```bash
