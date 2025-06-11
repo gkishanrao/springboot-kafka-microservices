@@ -24,12 +24,15 @@ This guide walks you through the process of downloading, installing, and running
 **Step 2: Start Kafka Environment**
 
 ** Start Zookeeper**
+  ```bash
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 
 **Start Kafka Broker**
+  ```bash
 .\bin\windows\kafka-server-start.bat .\config\server.properties
 
 **** 🛠️ Kafka Topic Operations**
+  ```bash
 .\bin\windows\kafka-topics.bat --create --topic topic-example --bootstrap-server localhost:9092
 
 **✍️ Produce Events (Send messages)**
